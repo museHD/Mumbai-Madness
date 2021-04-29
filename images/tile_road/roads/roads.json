@@ -1,0 +1,71 @@
+"metadata" : {
+	"images" : [
+		{
+			"tags" : ["roadPLAZA", "east", "north", "south", "west"],
+			"file" : "roadPLAZA.tga",
+			"layers" : "background",
+			// These not's prevent dead-ends (else remove these lines).
+			"not_bottom" : ["north"],
+			"not_top" : ["south"],
+			"not_left" : ["west"],
+			"not_right" : ["east"],
+			// These allow crossway dead-ends (else remove these lines).
+			"top" : ["roadNEWS"],
+			"left" : ["roadNEWS"],
+			"right" : ["roadNEWS"],
+			"bottom" : ["roadNEWS"]
+		}
+		{
+			"tags" : ["roadNEWS", "east", "north", "south", "west"],
+			"file" : "roadNEWS.tga",
+			"layers" : "background",
+			"top" : ["south"],
+			"left" : ["west"],
+			"right" : ["east"],
+			"bottom" : ["north"]
+		}
+		{
+			"tags" : ["roadEW", "east", "west"],
+			"file" : "roadEW.tga",
+			"layers" : "background",
+			"left" : ["west"],
+			"right" : ["east"]
+		}
+		{
+			"tags" : ["roadNS", "north", "south"],
+			"file" : "roadNS.tga",
+			"layers" : "background",
+			"top" : ["south"],
+			"bottom" : ["north"]
+		}
+		{
+			"tags" : ["roadNE", "east", "north"],
+			"file" : "roadNE.tga",
+			"layers" : "background",
+			"top" : ["south"],
+			"right" : ["east"]
+		}
+		{
+			"tags" : ["roadSE", "east", "south"],
+			"file" : "roadSE.tga",
+			"layers" : "background",
+			"bottom" : ["north"],
+			"right" : ["east"]
+		}
+		{
+			"tags" : ["roadNW", "west", "north"],
+			"file" : "roadNW.tga",
+			"layers" : "background",
+			"top" : ["south"],
+			"left" : ["west"]
+		}
+		{
+			"tags" : ["roadSW", "west", "south"],
+			"file" : "roadSW.tga",
+			"layers" : "background",
+			"bottom" : ["north"],
+			"left" : ["west"]
+		}
+	]
+}
+
